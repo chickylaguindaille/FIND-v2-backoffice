@@ -1,4 +1,4 @@
-{% extends 'layout.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% block title %}Corporations{% endblock %}
 
@@ -16,12 +16,16 @@
                 <td>{{ corporation.Nom }}</td>
             </tr>
             <tr>
-                <th>Ville</th>
-                <td>{{ corporation.Ville }}</td>
+                <th>Abreviation</th>
+                <td>{{ corporation.Abreviation }}</td>
             </tr>
             <tr>
-                <th>Pays</th>
-                <td>{{ corporation.Pays }}</td>
+                <th>VilleCorpo</th>
+                <td>{{ corporation.VilleCorpo }}</td>
+            </tr>
+            <tr>
+                <th>CountryCorpo</th>
+                <td>{{ corporation.CountryCorpo }}</td>
             </tr>
             <tr>
                 <th>Date</th>
@@ -32,12 +36,8 @@
                 <td>{{ corporation.Logo }}</td>
             </tr>
             <tr>
-                <th>Résumé</th>
+                <th>Resume</th>
                 <td>{{ corporation.Resume }}</td>
-            </tr>
-            <tr>
-                <th>Abréviation</th>
-                <td>{{ corporation.Abreviation }}</td>
             </tr>
         </tbody>
     </table>

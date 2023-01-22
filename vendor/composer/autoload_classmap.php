@@ -6,20 +6,12 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Controller\\ChickenController' => $baseDir . '/src/Controller/ChickenController.php',
-    'App\\Controller\\CorporationsController' => $baseDir . '/src/Controller/CorporationsController.php',
-    'App\\Controller\\FindController' => $baseDir . '/src/Controller/FindController.php',
+    'App\\Controller\\AccueilController' => $baseDir . '/src/Controller/AccueilController.php',
     'App\\Controller\\SecurityController' => $baseDir . '/src/Controller/SecurityController.php',
     'App\\Controller\\VilleController' => $baseDir . '/src/Controller/VilleController.php',
-    'App\\Entity\\Chicken' => $baseDir . '/src/Entity/Chicken.php',
-    'App\\Entity\\Corporations' => $baseDir . '/src/Entity/Corporations.php',
     'App\\Entity\\Ville' => $baseDir . '/src/Entity/Ville.php',
-    'App\\Form\\ChickenType' => $baseDir . '/src/Form/ChickenType.php',
-    'App\\Form\\CorporationsType' => $baseDir . '/src/Form/CorporationsType.php',
     'App\\Form\\VilleType' => $baseDir . '/src/Form/VilleType.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
-    'App\\Repository\\ChickenRepository' => $baseDir . '/src/Repository/ChickenRepository.php',
-    'App\\Repository\\CorporationsRepository' => $baseDir . '/src/Repository/CorporationsRepository.php',
     'App\\Repository\\VilleRepository' => $baseDir . '/src/Repository/VilleRepository.php',
     'App\\Security\\LofinFormAuthenticator' => $baseDir . '/src/Security/LofinFormAuthenticator.php',
     'App\\Security\\LoginFormAuthenticator' => $baseDir . '/src/Security/LoginFormAuthenticator.php',

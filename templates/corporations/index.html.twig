@@ -1,4 +1,4 @@
-{% extends 'layout.html.twig' %}
+{% extends 'base.html.twig' %}
 
 {% block title %}Corporations index{% endblock %}
 
@@ -10,12 +10,12 @@
             <tr>
                 <th>Id</th>
                 <th>Nom</th>
-                <th>Ville</th>
-                <th>Pays</th>
+                <th>Abreviation</th>
+                <th>VilleCorpo</th>
+                <th>CountryCorpo</th>
                 <th>Date</th>
                 <th>Logo</th>
                 <th>Resume</th>
-                <th>Abreviation</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -24,12 +24,12 @@
             <tr>
                 <td>{{ corporation.id }}</td>
                 <td>{{ corporation.Nom }}</td>
-                {# <td>{{ corporation.Ville }}</td> #}
-                {# <td>{{ corporation.Pays }}</td> #}
-                {# <td>{{ corporation.Date ? corporation.Date|date('Y-m-d') : '' }}</td> #}
-                {# <td>{{ corporation.Logo }}</td> #}
-                {# <td>{{ corporation.Resume }}</td>
-                <td>{{ corporation.Abreviation }}</td> #}
+                <td>{{ corporation.Abreviation }}</td>
+                <td>{{ corporation.VilleCorpo }}</td>
+                <td>{{ corporation.CountryCorpo }}</td>
+                <td>{{ corporation.Date ? corporation.Date|date('Y-m-d') : '' }}</td>
+                <td>{{ corporation.Logo }}</td>
+                <td>{{ corporation.Resume }}</td>
                 <td>
                     <a href="{{ path('app_corporations_show', {'id': corporation.id}) }}">show</a>
                     <a href="{{ path('app_corporations_edit', {'id': corporation.id}) }}">edit</a>

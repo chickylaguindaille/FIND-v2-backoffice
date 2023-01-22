@@ -357,9 +357,6 @@
         <argument type="service" id=".service_locator.mx0UMmY.App\Controller\VilleController"/>
       </call>
     </service>
-    <service id="App\Form\ChickenType" class="App\Form\ChickenType" autowire="true" autoconfigure="true">
-      <tag name="form.type"/>
-    </service>
     <service id="App\Form\CorporationsType" class="App\Form\CorporationsType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
     </service>
@@ -1157,7 +1154,6 @@
         <argument>Symfony\Bridge\Doctrine\Form\Type</argument>
       </argument>
       <argument type="collection">
-        <argument>App\Form\ChickenType</argument>
         <argument>App\Form\CorporationsType</argument>
         <argument>App\Form\VilleType</argument>
         <argument>Symfony\Component\Form\Extension\Core\Type\FormType</argument>
@@ -2442,6 +2438,14 @@
         <argument>-100</argument>
       </call>
       <call method="addListener">
+        <argument>Symfony\Component\Messenger\Event\WorkerRunningEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="messenger.listener.dispatch_pcntl_signal_listener"/>
+          <argument>onWorkerRunning</argument>
+        </argument>
+        <argument>100</argument>
+      </call>
+      <call method="addListener">
         <argument>Symfony\Component\Messenger\Event\WorkerStartedEvent</argument>
         <argument type="collection">
           <argument type="service_closure" id="messenger.listener.stop_worker_on_restart_signal_listener"/>
@@ -2456,6 +2460,14 @@
           <argument>onWorkerRunning</argument>
         </argument>
         <argument>0</argument>
+      </call>
+      <call method="addListener">
+        <argument>Symfony\Component\Messenger\Event\WorkerStartedEvent</argument>
+        <argument type="collection">
+          <argument type="service_closure" id="messenger.listener.stop_worker_on_sigterm_signal_listener"/>
+          <argument>onWorkerStarted</argument>
+        </argument>
+        <argument>100</argument>
       </call>
       <call method="addListener">
         <argument>Symfony\Component\Messenger\Event\WorkerMessageFailedEvent</argument>
@@ -3304,7 +3316,7 @@
       <argument type="service" id="form.registry"/>
     </service>
     <service id="form.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension">
-      <argument type="service" id=".service_locator.c_ZkoX4"/>
+      <argument type="service" id=".service_locator.W7ZRDhM"/>
       <argument type="collection">
         <argument key="Symfony\Component\Form\Extension\Core\Type\FormType" type="iterator">
           <argument type="service" id="form.type_extension.form.transformation_failure_handling"/>
@@ -6201,8 +6213,6 @@
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\VilleController" class="App\Controller\VilleController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\VilleController" class="App\Controller\VilleController" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\VilleController" class="App\Controller\VilleController" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\ChickenType" class="App\Form\ChickenType" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.App\Form\ChickenType" class="App\Form\ChickenType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\CorporationsType" class="App\Form\CorporationsType" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Form\CorporationsType" class="App\Form\CorporationsType" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Symfony\Component\Form\FormTypeInterface.0.App\Form\VilleType" class="App\Form\VilleType" autowire="true" abstract="true"/>
@@ -6684,10 +6694,9 @@
       <argument type="service" id="debug.argument_resolver.not_tagged_controller.inner"/>
       <argument type="service" id="debug.stopwatch"/>
     </service>
-    <service id=".service_locator.c_ZkoX4" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.W7ZRDhM" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
-        <argument key="App\Form\ChickenType" type="service_closure" id="App\Form\ChickenType"/>
         <argument key="App\Form\CorporationsType" type="service_closure" id="App\Form\CorporationsType"/>
         <argument key="App\Form\VilleType" type="service_closure" id="App\Form\VilleType"/>
         <argument key="Symfony\Bridge\Doctrine\Form\Type\EntityType" type="service_closure" id="form.type.entity"/>
@@ -8254,7 +8263,7 @@
     <service id=".service_locator.0GV1BZZ" alias=".service_locator.gSv9zYw"/>
     <service id=".service_locator.Ogpz5Zc" alias=".service_locator.2cosYPD"/>
     <service id=".service_locator.wKF4yn1" alias=".service_locator.19_mNxd"/>
-    <service id=".service_locator..eFecQc" alias=".service_locator.c_ZkoX4"/>
+    <service id=".service_locator.Yr4MLed" alias=".service_locator.W7ZRDhM"/>
     <service id=".service_locator.nk0lT0X" alias=".service_locator.1kmbKC8"/>
     <service id=".service_locator.O24_MAy" alias=".service_locator.yY.p4P7"/>
     <service id=".service_locator.0ghLsew" alias=".service_locator.mx0UMmY"/>

@@ -45,7 +45,7 @@ class __TwigTemplate_da0368c1d8e71a303530846e67052a29 extends Template
 
 <script>
     \$( 'input:radio' ).click(function() {
-        \$( \".table\" ).addClass('d-none')
+        \$( \".tablebdd\" ).addClass('d-none')
         var selection=\$(this).attr('id');
         console.log(selection)
         \$('.'+selection ).removeClass('d-none')
@@ -78,7 +78,7 @@ class __TwigTemplate_da0368c1d8e71a303530846e67052a29 extends Template
 
 <script>
     \$( 'input:radio' ).click(function() {
-        \$( \".table\" ).addClass('d-none')
+        \$( \".tablebdd\" ).addClass('d-none')
         var selection=\$(this).attr('id');
         console.log(selection)
         \$('.'+selection ).removeClass('d-none')

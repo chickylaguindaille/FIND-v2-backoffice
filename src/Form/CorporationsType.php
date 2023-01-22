@@ -13,9 +13,9 @@ class CorporationsType extends AbstractType
     {
         $builder
             ->add('Nom')
-            ->add('Ville')
             ->add('Abreviation')
-            ->add('Pays')
+            ->add('VilleCorpo')
+            ->add('CountryCorpo')
             ->add('Date')
             ->add('Logo')
             ->add('Resume')

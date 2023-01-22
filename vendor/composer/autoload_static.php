@@ -595,20 +595,12 @@ class ComposerStaticInit8cbdf01acf45587532a1f25acd81e508
     );
 
     public static $classMap = array (
-        'App\\Controller\\ChickenController' => __DIR__ . '/../..' . '/src/Controller/ChickenController.php',
-        'App\\Controller\\CorporationsController' => __DIR__ . '/../..' . '/src/Controller/CorporationsController.php',
-        'App\\Controller\\FindController' => __DIR__ . '/../..' . '/src/Controller/FindController.php',
+        'App\\Controller\\AccueilController' => __DIR__ . '/../..' . '/src/Controller/AccueilController.php',
         'App\\Controller\\SecurityController' => __DIR__ . '/../..' . '/src/Controller/SecurityController.php',
         'App\\Controller\\VilleController' => __DIR__ . '/../..' . '/src/Controller/VilleController.php',
-        'App\\Entity\\Chicken' => __DIR__ . '/../..' . '/src/Entity/Chicken.php',
-        'App\\Entity\\Corporations' => __DIR__ . '/../..' . '/src/Entity/Corporations.php',
         'App\\Entity\\Ville' => __DIR__ . '/../..' . '/src/Entity/Ville.php',
-        'App\\Form\\ChickenType' => __DIR__ . '/../..' . '/src/Form/ChickenType.php',
-        'App\\Form\\CorporationsType' => __DIR__ . '/../..' . '/src/Form/CorporationsType.php',
         'App\\Form\\VilleType' => __DIR__ . '/../..' . '/src/Form/VilleType.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
-        'App\\Repository\\ChickenRepository' => __DIR__ . '/../..' . '/src/Repository/ChickenRepository.php',
-        'App\\Repository\\CorporationsRepository' => __DIR__ . '/../..' . '/src/Repository/CorporationsRepository.php',
         'App\\Repository\\VilleRepository' => __DIR__ . '/../..' . '/src/Repository/VilleRepository.php',
         'App\\Security\\LofinFormAuthenticator' => __DIR__ . '/../..' . '/src/Security/LofinFormAuthenticator.php',
         'App\\Security\\LoginFormAuthenticator' => __DIR__ . '/../..' . '/src/Security/LoginFormAuthenticator.php',

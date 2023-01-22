@@ -98,46 +98,48 @@ class __TwigTemplate_18b8653212b0a2da4a83726fd6c29fac extends Template
                 <th>Id</th>
                 <th>Nom</th>
                 <th>Blason</th>
-                <th>actions</th>
+                <th>Country</th>
+                <th>Région</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
         ";
-        // line 20
+        // line 22
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["villes"]) || array_key_exists("villes", $context) ? $context["villes"] : (function () { throw new RuntimeError('Variable "villes" does not exist.', 20, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["villes"]) || array_key_exists("villes", $context) ? $context["villes"] : (function () { throw new RuntimeError('Variable "villes" does not exist.', 22, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["ville"]) {
-            // line 21
+            // line 23
             echo "            <tr>
                 <td>";
-            // line 22
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "id", [], "any", false, false, false, 22), "html", null, true);
-            echo "</td>
-                <td>";
-            // line 23
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "nom", [], "any", false, false, false, 23), "html", null, true);
-            echo "</td>
-                <td>";
             // line 24
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "blason", [], "any", false, false, false, 24), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "id", [], "any", false, false, false, 24), "html", null, true);
             echo "</td>
                 <td>";
             // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "country", [], "any", false, false, false, 25), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "nom", [], "any", false, false, false, 25), "html", null, true);
             echo "</td>
                 <td>";
             // line 26
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "region", [], "any", false, false, false, 26), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "blason", [], "any", false, false, false, 26), "html", null, true);
+            echo "</td>
+                <td>";
+            // line 27
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "country", [], "any", false, false, false, 27), "html", null, true);
+            echo "</td>
+                <td>";
+            // line 28
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "region", [], "any", false, false, false, 28), "html", null, true);
             echo "</td>
                 <td>
                     <a href=\"";
-            // line 28
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ville_show", ["id" => twig_get_attribute($this->env, $this->source, $context["ville"], "id", [], "any", false, false, false, 28)]), "html", null, true);
+            // line 30
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ville_show", ["id" => twig_get_attribute($this->env, $this->source, $context["ville"], "id", [], "any", false, false, false, 30)]), "html", null, true);
             echo "\">show</a>
                     <a href=\"";
-            // line 29
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ville_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["ville"], "id", [], "any", false, false, false, 29)]), "html", null, true);
+            // line 31
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ville_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["ville"], "id", [], "any", false, false, false, 31)]), "html", null, true);
             echo "\">edit</a>
                 </td>
             </tr>
@@ -145,7 +147,7 @@ class __TwigTemplate_18b8653212b0a2da4a83726fd6c29fac extends Template
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 33
+            // line 35
             echo "            <tr>
                 <td colspan=\"4\">no records found</td>
             </tr>
@@ -154,7 +156,7 @@ class __TwigTemplate_18b8653212b0a2da4a83726fd6c29fac extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ville'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 37
+        // line 39
         echo "        </tbody>
     </table>
 
@@ -179,7 +181,7 @@ class __TwigTemplate_18b8653212b0a2da4a83726fd6c29fac extends Template
 
     public function getDebugInfo()
     {
-        return array (  158 => 37,  149 => 33,  140 => 29,  136 => 28,  131 => 26,  127 => 25,  123 => 24,  119 => 23,  115 => 22,  112 => 21,  107 => 20,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  160 => 39,  151 => 35,  142 => 31,  138 => 30,  133 => 28,  129 => 27,  125 => 26,  121 => 25,  117 => 24,  114 => 23,  109 => 22,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -199,7 +201,9 @@ class __TwigTemplate_18b8653212b0a2da4a83726fd6c29fac extends Template
                 <th>Id</th>
                 <th>Nom</th>
                 <th>Blason</th>
-                <th>actions</th>
+                <th>Country</th>
+                <th>Région</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>

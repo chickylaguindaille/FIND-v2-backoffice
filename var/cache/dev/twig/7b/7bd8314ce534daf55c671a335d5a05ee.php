@@ -79,14 +79,14 @@ class __TwigTemplate_2e8b87f3335e2c9260c4b39a861cb1db extends Template
     </div>
 </div>
 
-<div class=\"table option1\">
+<div class=\"tablebdd option1\">
     ";
         // line 21
         $this->loadTemplate("ville/index.html.twig", "accueil.html.twig", 21)->display($context);
         // line 22
         echo "</div>
 
-<div class=\"d-none table option2\">
+<div class=\"d-none tablebdd option2\">
     ";
         // line 25
         $this->loadTemplate("corporations/index.html.twig", "accueil.html.twig", 25)->display($context);
@@ -138,11 +138,11 @@ class __TwigTemplate_2e8b87f3335e2c9260c4b39a861cb1db extends Template
     </div>
 </div>
 
-<div class=\"table option1\">
+<div class=\"tablebdd option1\">
     {% include 'ville/index.html.twig' %}
 </div>
 
-<div class=\"d-none table option2\">
+<div class=\"d-none tablebdd option2\">
     {% include 'corporations/index.html.twig' %}
 </div>
 

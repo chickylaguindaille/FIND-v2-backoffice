@@ -17,11 +17,14 @@ class Corporations
     #[ORM\Column(length: 255)]
     private ?string $Nom = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $Ville = null;
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $Abreviation = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $Pays = null;
+    private ?string $VilleCorpo = null;
+
+    #[ORM\Column(length: 255)]
+    private ?string $CountryCorpo = null;
 
     #[ORM\Column(type: Types::DATE_MUTABLE, nullable: true)]
     private ?\DateTimeInterface $Date = null;
@@ -29,10 +32,7 @@ class Corporations
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $Logo = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $Abreviation = null;
-
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 255, nullable: true)]
     private ?string $Resume = null;
 
     public function getId(): ?int
@@ -52,27 +52,38 @@ class Corporations
         return $this;
     }
 
-
-    public function getVilleCorpo(): ?string
+    public function getAbreviation(): ?string
     {
-        return $this->Ville;
+        return $this->Abreviation;
     }
 
-    public function setVilleCorpo(string $Ville): self
+    public function setAbreviation(?string $Abreviation): self
     {
-        $this->Ville = $Ville;
+        $this->Abreviation = $Abreviation;
 
         return $this;
     }
 
-    public function getPays(): ?string
+    public function getVilleCorpo(): ?string
     {
-        return $this->Pays;
+        return $this->VilleCorpo;
     }
 
-    public function setPays(string $Pays): self
+    public function setVilleCorpo(string $VilleCorpo): self
     {
-        $this->Pays = $Pays;
+        $this->VilleCorpo = $VilleCorpo;
+
+        return $this;
+    }
+
+    public function getCountryCorpo(): ?string
+    {
+        return $this->CountryCorpo;
+    }
+
+    public function setCountryCorpo(string $CountryCorpo): self
+    {
+        $this->CountryCorpo = $CountryCorpo;
 
         return $this;
     }
@@ -101,28 +112,15 @@ class Corporations
         return $this;
     }
 
-    public function getAbreviation(): ?string
-    {
-        return $this->Abreviation;
-    }
-
-    public function setAbreviation(string $Abreviation): self
-    {
-        $this->Abreviation = $Abreviation;
-
-        return $this;
-    }
-
     public function getResume(): ?string
     {
         return $this->Resume;
     }
 
-    public function setResume(string $Resume): self
+    public function setResume(?string $Resume): self
     {
         $this->Resume = $Resume;
 
         return $this;
     }
-
 }
