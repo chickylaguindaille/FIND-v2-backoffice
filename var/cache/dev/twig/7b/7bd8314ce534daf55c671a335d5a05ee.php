@@ -70,10 +70,10 @@ class __TwigTemplate_2e8b87f3335e2c9260c4b39a861cb1db extends Template
         <div class=\"col py-3 text-center\">
            <div class=\"btn-group\">
                 <input type=\"radio\" class=\"btn-check\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked />
-                <label class=\"btn btn-secondary\" for=\"option1\">Villes</label>
+                <label class=\"btn btn-primary\" for=\"option1\">Villes</label>
 
                 <input type=\"radio\" class=\"btn-check\" name=\"options\" id=\"option2\" autocomplete=\"off\" />
-                <label class=\"btn btn-secondary\" for=\"option2\">Corporations</label>
+                <label class=\"btn btn-primary\" for=\"option2\">Corporations</label>
             </div>
         </div>
     </div>
@@ -129,10 +129,10 @@ class __TwigTemplate_2e8b87f3335e2c9260c4b39a861cb1db extends Template
         <div class=\"col py-3 text-center\">
            <div class=\"btn-group\">
                 <input type=\"radio\" class=\"btn-check\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked />
-                <label class=\"btn btn-secondary\" for=\"option1\">Villes</label>
+                <label class=\"btn btn-primary\" for=\"option1\">Villes</label>
 
                 <input type=\"radio\" class=\"btn-check\" name=\"options\" id=\"option2\" autocomplete=\"off\" />
-                <label class=\"btn btn-secondary\" for=\"option2\">Corporations</label>
+                <label class=\"btn btn-primary\" for=\"option2\">Corporations</label>
             </div>
         </div>
     </div>

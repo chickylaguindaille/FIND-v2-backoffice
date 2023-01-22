@@ -23,10 +23,10 @@ class AccueilController extends AbstractController
      * @Route("/accueil", name="accueil")
      * @Template()
      */
-    public function accueil(VilleRepository $villeRepository, Request $request)
+    public function accueil(VilleRepository $villeRepository, CorporationsRepository $corporationsRepository, Request $request)
     {
         return $this->render('accueil.html.twig', [
-            'villes' => $villeRepository->findAll(), 'corporations' => $villeRepository->findAll()
+            'villes' => $villeRepository->findAll(), 'corporations' => $corporationsRepository->findAll()
         ]);
     }
 }

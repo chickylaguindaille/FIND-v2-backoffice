@@ -65,7 +65,7 @@ class __TwigTemplate_375f859646a733ce88270218579a9dc7 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Corporations index";
+        echo "Corporations";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -85,7 +85,13 @@ class __TwigTemplate_375f859646a733ce88270218579a9dc7 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Corporations index</h1>
+        echo "    <div class=\"d-flex\">
+        <h1>Corporations</h1>
+        <a href=\"";
+        // line 8
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_corporations_new");
+        echo "\" class=\"align-self-center px-3\">Create new</a>
+    </div>
 
     <table class=\"table\">
         <thead>
@@ -103,53 +109,53 @@ class __TwigTemplate_375f859646a733ce88270218579a9dc7 extends Template
         </thead>
         <tbody>
         ";
-        // line 23
+        // line 26
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["corporations"]) || array_key_exists("corporations", $context) ? $context["corporations"] : (function () { throw new RuntimeError('Variable "corporations" does not exist.', 23, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["corporations"]) || array_key_exists("corporations", $context) ? $context["corporations"] : (function () { throw new RuntimeError('Variable "corporations" does not exist.', 26, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["corporation"]) {
-            // line 24
+            // line 27
             echo "            <tr>
                 <td>";
-            // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "id", [], "any", false, false, false, 25), "html", null, true);
-            echo "</td>
-                <td>";
-            // line 26
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Nom", [], "any", false, false, false, 26), "html", null, true);
-            echo "</td>
-                <td>";
-            // line 27
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Abreviation", [], "any", false, false, false, 27), "html", null, true);
-            echo "</td>
-                <td>";
             // line 28
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "VilleCorpo", [], "any", false, false, false, 28), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "id", [], "any", false, false, false, 28), "html", null, true);
             echo "</td>
                 <td>";
             // line 29
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "CountryCorpo", [], "any", false, false, false, 29), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Nom", [], "any", false, false, false, 29), "html", null, true);
             echo "</td>
                 <td>";
             // line 30
-            ((twig_get_attribute($this->env, $this->source, $context["corporation"], "Date", [], "any", false, false, false, 30)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Date", [], "any", false, false, false, 30), "Y-m-d"), "html", null, true))) : (print ("")));
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Abreviation", [], "any", false, false, false, 30), "html", null, true);
             echo "</td>
                 <td>";
             // line 31
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Logo", [], "any", false, false, false, 31), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "VilleCorpo", [], "any", false, false, false, 31), "html", null, true);
             echo "</td>
                 <td>";
             // line 32
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Resume", [], "any", false, false, false, 32), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "CountryCorpo", [], "any", false, false, false, 32), "html", null, true);
+            echo "</td>
+                <td>";
+            // line 33
+            ((twig_get_attribute($this->env, $this->source, $context["corporation"], "Date", [], "any", false, false, false, 33)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Date", [], "any", false, false, false, 33), "Y-m-d"), "html", null, true))) : (print ("")));
+            echo "</td>
+                <td>";
+            // line 34
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Logo", [], "any", false, false, false, 34), "html", null, true);
+            echo "</td>
+                <td>";
+            // line 35
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Resume", [], "any", false, false, false, 35), "html", null, true);
             echo "</td>
                 <td>
                     <a href=\"";
-            // line 34
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_corporations_show", ["id" => twig_get_attribute($this->env, $this->source, $context["corporation"], "id", [], "any", false, false, false, 34)]), "html", null, true);
+            // line 37
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_corporations_show", ["id" => twig_get_attribute($this->env, $this->source, $context["corporation"], "id", [], "any", false, false, false, 37)]), "html", null, true);
             echo "\">show</a>
                     <a href=\"";
-            // line 35
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_corporations_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["corporation"], "id", [], "any", false, false, false, 35)]), "html", null, true);
+            // line 38
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_corporations_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["corporation"], "id", [], "any", false, false, false, 38)]), "html", null, true);
             echo "\">edit</a>
                 </td>
             </tr>
@@ -157,7 +163,7 @@ class __TwigTemplate_375f859646a733ce88270218579a9dc7 extends Template
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 39
+            // line 42
             echo "            <tr>
                 <td colspan=\"9\">no records found</td>
             </tr>
@@ -166,14 +172,10 @@ class __TwigTemplate_375f859646a733ce88270218579a9dc7 extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['corporation'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 43
+        // line 46
         echo "        </tbody>
     </table>
 
-    <a href=\"";
-        // line 46
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_corporations_new");
-        echo "\">Create new</a>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -195,17 +197,20 @@ class __TwigTemplate_375f859646a733ce88270218579a9dc7 extends Template
 
     public function getDebugInfo()
     {
-        return array (  175 => 46,  170 => 43,  161 => 39,  152 => 35,  148 => 34,  143 => 32,  139 => 31,  135 => 30,  131 => 29,  127 => 28,  123 => 27,  119 => 26,  115 => 25,  112 => 24,  107 => 23,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  176 => 46,  167 => 42,  158 => 38,  154 => 37,  149 => 35,  145 => 34,  141 => 33,  137 => 32,  133 => 31,  129 => 30,  125 => 29,  121 => 28,  118 => 27,  113 => 26,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'layout.html.twig' %}
 
-{% block title %}Corporations index{% endblock %}
+{% block title %}Corporations{% endblock %}
 
 {% block body %}
-    <h1>Corporations index</h1>
+    <div class=\"d-flex\">
+        <h1>Corporations</h1>
+        <a href=\"{{ path('app_corporations_new') }}\" class=\"align-self-center px-3\">Create new</a>
+    </div>
 
     <table class=\"table\">
         <thead>
@@ -245,7 +250,6 @@ class __TwigTemplate_375f859646a733ce88270218579a9dc7 extends Template
         </tbody>
     </table>
 
-    <a href=\"{{ path('app_corporations_new') }}\">Create new</a>
 {% endblock %}
 ", "corporations/index.html.twig", "/Applications/MAMP/htdocs/FIND-v2-backoffice/templates/corporations/index.html.twig");
     }
