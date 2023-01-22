@@ -1,0 +1,50 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Corporations{% endblock %}
+
+{% block body %}
+    <h1>Corporations</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ corporation.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ corporation.Nom }}</td>
+            </tr>
+            <tr>
+                <th>Ville</th>
+                <td>{{ corporation.Ville }}</td>
+            </tr>
+            <tr>
+                <th>Pays</th>
+                <td>{{ corporation.Pays }}</td>
+            </tr>
+            <tr>
+                <th>Date</th>
+                <td>{{ corporation.Date ? corporation.Date|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Logo</th>
+                <td>{{ corporation.Logo }}</td>
+            </tr>
+            <tr>
+                <th>Résumé</th>
+                <td>{{ corporation.Resume }}</td>
+            </tr>
+            <tr>
+                <th>Abréviation</th>
+                <td>{{ corporation.Abreviation }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_corporations_index') }}">back to list</a>
+
+    <a href="{{ path('app_corporations_edit', {'id': corporation.id}) }}">edit</a>
+
+    {{ include('corporations/_delete_form.html.twig') }}
+{% endblock %}

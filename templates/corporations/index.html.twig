@@ -1,0 +1,47 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Corporations index{% endblock %}
+
+{% block body %}
+    <h1>Corporations index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Ville</th>
+                <th>Pays</th>
+                <th>Date</th>
+                <th>Logo</th>
+                <th>Resume</th>
+                <th>Abreviation</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for corporation in corporations %}
+            <tr>
+                <td>{{ corporation.id }}</td>
+                <td>{{ corporation.Nom }}</td>
+                <td>{{ corporation.Ville }}</td>
+                <td>{{ corporation.Pays }}</td>
+                <td>{{ corporation.Date ? corporation.Date|date('Y-m-d') : '' }}</td>
+                <td>{{ corporation.Logo }}</td>
+                <td>{{ corporation.Resume }}</td>
+                <td>{{ corporation.Abreviation }}</td>
+                <td>
+                    <a href="{{ path('app_corporations_show', {'id': corporation.id}) }}">show</a>
+                    <a href="{{ path('app_corporations_edit', {'id': corporation.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_corporations_new') }}">Create new</a>
+{% endblock %}
