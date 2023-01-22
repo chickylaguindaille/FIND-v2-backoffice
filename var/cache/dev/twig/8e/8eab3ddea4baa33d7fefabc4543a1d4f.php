@@ -44,38 +44,8 @@ class __TwigTemplate_da0368c1d8e71a303530846e67052a29 extends Template
 <script src=\"https://code.jquery.com/jquery-3.5.0.js\"></script>
 
 <script>
-";
-        // line 6
-        echo "    \$( \"#searchButtonSupportedContent\" ).click(function() {
-        \$( \".searchHideSupportedContent\" ).addClass('hidden')
 
-        \$('#searchFormSupportedContent').removeClass('hidden')
-        \$('#searchFormSupportedContent').addClass('flex')
-        \$('#closeHideSupportedContent').removeClass('hidden')
-    });
 
-";
-        // line 15
-        echo "    \$( \"#closeHideSupportedContent\" ).click(function() {
-        \$( \".searchHideSupportedContent\" ).removeClass('hidden')
-
-        \$('#searchFormSupportedContent').removeClass('flex')
-        \$('#searchFormSupportedContent').addClass('hidden')
-        \$('#closeHideSupportedContent').addClass('hidden')
-    });
-
-";
-        // line 24
-        echo "    \$( \"#closeSearchSupportedContent\" ).click(function() {
-        console.log(\"test\");
-        \$('#navbarSupportedContent').removeClass('show')
-    });\$
-
-";
-        // line 30
-        echo "    ";
-        // line 33
-        echo "
 
 </script>";
         
@@ -93,7 +63,7 @@ class __TwigTemplate_da0368c1d8e71a303530846e67052a29 extends Template
 
     public function getDebugInfo()
     {
-        return array (  78 => 33,  76 => 30,  69 => 24,  59 => 15,  49 => 6,  43 => 1,);
+        return array (  43 => 1,);
     }
 
     public function getSourceContext()
@@ -102,34 +72,7 @@ class __TwigTemplate_da0368c1d8e71a303530846e67052a29 extends Template
 <script src=\"https://code.jquery.com/jquery-3.5.0.js\"></script>
 
 <script>
-{# NAVBAR SEARCH BUTTON #}
-    \$( \"#searchButtonSupportedContent\" ).click(function() {
-        \$( \".searchHideSupportedContent\" ).addClass('hidden')
 
-        \$('#searchFormSupportedContent').removeClass('hidden')
-        \$('#searchFormSupportedContent').addClass('flex')
-        \$('#closeHideSupportedContent').removeClass('hidden')
-    });
-
-{# SEARCH CLOSE BUTTON #}
-    \$( \"#closeHideSupportedContent\" ).click(function() {
-        \$( \".searchHideSupportedContent\" ).removeClass('hidden')
-
-        \$('#searchFormSupportedContent').removeClass('flex')
-        \$('#searchFormSupportedContent').addClass('hidden')
-        \$('#closeHideSupportedContent').addClass('hidden')
-    });
-
-{# SIDEBAR CLOSE BUTTON #}
-    \$( \"#closeSearchSupportedContent\" ).click(function() {
-        console.log(\"test\");
-        \$('#navbarSupportedContent').removeClass('show')
-    });\$
-
-{# SIDEBAR MOBILE BACKGROUND #}
-    {# \$( \".nav-link\" ).click(function() {
-        \$(this).addClass('selected')
-    });\$ #}
 
 
 </script>", "inc/all/all.js.twig", "/Applications/MAMP/htdocs/FIND-v2-backoffice/templates/inc/all/all.js.twig");

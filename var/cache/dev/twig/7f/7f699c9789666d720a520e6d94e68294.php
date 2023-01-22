@@ -43,22 +43,8 @@ class __TwigTemplate_3d27d8313e1e8a39f8b36accbb76aa4c extends Template
         echo "<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\">
 
 <style>
-.hidden{
-    display: none;
-}
 
-.flex{
-    display: flex;
-}
 
-.collapsing {
-    transition-property: width, visibility;
-    transition-duration: 0s;
-}
-
-";
-        // line 20
-        echo "
 </style>";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -75,7 +61,7 @@ class __TwigTemplate_3d27d8313e1e8a39f8b36accbb76aa4c extends Template
 
     public function getDebugInfo()
     {
-        return array (  61 => 20,  43 => 1,);
+        return array (  43 => 1,);
     }
 
     public function getSourceContext()
@@ -83,22 +69,7 @@ class __TwigTemplate_3d27d8313e1e8a39f8b36accbb76aa4c extends Template
         return new Source("<link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\">
 
 <style>
-.hidden{
-    display: none;
-}
 
-.flex{
-    display: flex;
-}
-
-.collapsing {
-    transition-property: width, visibility;
-    transition-duration: 0s;
-}
-
-{# .selected {
-    background-color: #818181 !important;
-} #}
 
 </style>", "inc/all/all.css.twig", "/Applications/MAMP/htdocs/FIND-v2-backoffice/templates/inc/all/all.css.twig");
     }

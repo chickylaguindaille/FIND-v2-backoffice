@@ -8,15 +8,11 @@
 {% block body %}
 
     {% block navbar %}
-        {% include 'inc/all/navbar/navbar.html.twig' %}
-    {% endblock %}
-
-    {% block sidebar %}
-        {% include 'inc/all/sidebar/sidebar.html.twig' %}
+        {% include 'inc/navbar.html.twig' %}
     {% endblock %}
 
     {% block content %}
-        {% include 'accueil.html.twig' %}
+        {# {% include 'accueil.html.twig' %} #}
     {% endblock %}
 
     {% block footer %}

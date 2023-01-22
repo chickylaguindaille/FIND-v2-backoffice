@@ -67,11 +67,14 @@ class __TwigTemplate_2e8b87f3335e2c9260c4b39a861cb1db extends Template
         // line 6
         echo "<div class=\"container-fluid\">
     <div class=\"row flex-nowrap\">
-        <div class=\"col py-3\">
-            <h3>Folklore Is Not Dead</h3>
-            <p class=\"lead\">
-                An example 2-level sidebar with collasible menu items. The menu functions like an \"accordion\" where only a single 
-                menu is be open at a time. While the sidebar itself is not toggle-able, it does responsively shrink in width on smaller screens.</p>
+        <div class=\"col py-3 text-center\">
+           <div class=\"btn-group\">
+                <input type=\"radio\" class=\"btn-check\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked />
+                <label class=\"btn btn-secondary\" for=\"option1\">Villes</label>
+
+                <input type=\"radio\" class=\"btn-check\" name=\"options\" id=\"option2\" autocomplete=\"off\" />
+                <label class=\"btn btn-secondary\" for=\"option2\">Corporations</label>
+            </div>
         </div>
     </div>
 </div>
@@ -108,11 +111,14 @@ class __TwigTemplate_2e8b87f3335e2c9260c4b39a861cb1db extends Template
 {% block content %}
 <div class=\"container-fluid\">
     <div class=\"row flex-nowrap\">
-        <div class=\"col py-3\">
-            <h3>Folklore Is Not Dead</h3>
-            <p class=\"lead\">
-                An example 2-level sidebar with collasible menu items. The menu functions like an \"accordion\" where only a single 
-                menu is be open at a time. While the sidebar itself is not toggle-able, it does responsively shrink in width on smaller screens.</p>
+        <div class=\"col py-3 text-center\">
+           <div class=\"btn-group\">
+                <input type=\"radio\" class=\"btn-check\" name=\"options\" id=\"option1\" autocomplete=\"off\" checked />
+                <label class=\"btn btn-secondary\" for=\"option1\">Villes</label>
+
+                <input type=\"radio\" class=\"btn-check\" name=\"options\" id=\"option2\" autocomplete=\"off\" />
+                <label class=\"btn btn-secondary\" for=\"option2\">Corporations</label>
+            </div>
         </div>
     </div>
 </div>
