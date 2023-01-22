@@ -1,1 +1,10 @@
 a1eea7,127.0.0.1,GET,http://localhost:8888/FIND-v2-backoffice/public/index.php/accueil,1674412902,,200
+39543a,127.0.0.1,GET,http://localhost:8888/FIND-v2-backoffice/public/index.php/corporations/,1674413013,,200
+cd1446,127.0.0.1,GET,http://localhost:8888/FIND-v2-backoffice/public/index.php/corporations/liste,1674413023,e5cbe4,404
+e5cbe4,127.0.0.1,GET,http://localhost:8888/FIND-v2-backoffice/public/index.php/corporations/liste,1674413023,,404
+395493,127.0.0.1,GET,http://localhost:8888/FIND-v2-backoffice/public/index.php/corporations/new,1674413104,,200
+799fb9,127.0.0.1,GET,http://localhost:8888/FIND-v2-backoffice/public/index.php/corporations/new,1674413134,,200
+354a13,127.0.0.1,POST,http://localhost:8888/FIND-v2-backoffice/public/index.php/corporations/new,1674413164,,303
+5b836e,127.0.0.1,GET,http://localhost:8888/FIND-v2-backoffice/public/index.php/corporations/,1674413166,,200
+310f86,127.0.0.1,GET,http://localhost:8888/FIND-v2-backoffice/public/index.php/accueil,1674413171,6042f5,500
+6042f5,127.0.0.1,GET,http://localhost:8888/FIND-v2-backoffice/public/index.php/accueil,1674413171,,500
