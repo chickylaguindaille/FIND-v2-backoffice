@@ -3,8 +3,10 @@
 {% block title %}Ville index{% endblock %}
 
 {% block body %}
-    <h1>Ville index</h1>
-
+    <div class="d-flex">
+        <h1>Villes</h1>
+        <a href="{{ path('app_ville_new') }}" class="align-self-center px-3">Create new</a>
+    </div>
     <table class="table">
         <thead>
             <tr>
@@ -35,5 +37,4 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_ville_new') }}">Create new</a>
 {% endblock %}

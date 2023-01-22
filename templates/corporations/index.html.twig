@@ -24,12 +24,12 @@
             <tr>
                 <td>{{ corporation.id }}</td>
                 <td>{{ corporation.Nom }}</td>
-                <td>{{ corporation.Ville }}</td>
-                <td>{{ corporation.Pays }}</td>
-                <td>{{ corporation.Date ? corporation.Date|date('Y-m-d') : '' }}</td>
-                <td>{{ corporation.Logo }}</td>
-                <td>{{ corporation.Resume }}</td>
-                <td>{{ corporation.Abreviation }}</td>
+                {# <td>{{ corporation.Ville }}</td> #}
+                {# <td>{{ corporation.Pays }}</td> #}
+                {# <td>{{ corporation.Date ? corporation.Date|date('Y-m-d') : '' }}</td> #}
+                {# <td>{{ corporation.Logo }}</td> #}
+                {# <td>{{ corporation.Resume }}</td>
+                <td>{{ corporation.Abreviation }}</td> #}
                 <td>
                     <a href="{{ path('app_corporations_show', {'id': corporation.id}) }}">show</a>
                     <a href="{{ path('app_corporations_edit', {'id': corporation.id}) }}">edit</a>

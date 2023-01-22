@@ -78,6 +78,21 @@ class __TwigTemplate_2e8b87f3335e2c9260c4b39a861cb1db extends Template
         </div>
     </div>
 </div>
+
+<div class=\"table option1\">
+    ";
+        // line 21
+        $this->loadTemplate("ville/index.html.twig", "accueil.html.twig", 21)->display($context);
+        // line 22
+        echo "</div>
+
+<div class=\"d-none table option2\">
+    ";
+        // line 25
+        $this->loadTemplate("corporations/index.html.twig", "accueil.html.twig", 25)->display($context);
+        // line 26
+        echo "</div>
+
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -99,7 +114,7 @@ class __TwigTemplate_2e8b87f3335e2c9260c4b39a861cb1db extends Template
 
     public function getDebugInfo()
     {
-        return array (  68 => 6,  58 => 5,  35 => 1,);
+        return array (  94 => 26,  92 => 25,  87 => 22,  85 => 21,  68 => 6,  58 => 5,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -122,6 +137,15 @@ class __TwigTemplate_2e8b87f3335e2c9260c4b39a861cb1db extends Template
         </div>
     </div>
 </div>
+
+<div class=\"table option1\">
+    {% include 'ville/index.html.twig' %}
+</div>
+
+<div class=\"d-none table option2\">
+    {% include 'corporations/index.html.twig' %}
+</div>
+
 {% endblock %}", "accueil.html.twig", "/Applications/MAMP/htdocs/FIND-v2-backoffice/templates/accueil.html.twig");
     }
 }

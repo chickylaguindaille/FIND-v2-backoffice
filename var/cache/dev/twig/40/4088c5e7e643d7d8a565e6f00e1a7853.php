@@ -118,31 +118,17 @@ class __TwigTemplate_375f859646a733ce88270218579a9dc7 extends Template
             // line 26
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Nom", [], "any", false, false, false, 26), "html", null, true);
             echo "</td>
-                <td>";
-            // line 27
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Ville", [], "any", false, false, false, 27), "html", null, true);
-            echo "</td>
-                <td>";
+                ";
             // line 28
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Pays", [], "any", false, false, false, 28), "html", null, true);
-            echo "</td>
-                <td>";
+            echo "                ";
             // line 29
-            ((twig_get_attribute($this->env, $this->source, $context["corporation"], "Date", [], "any", false, false, false, 29)) ? (print (twig_escape_filter($this->env, twig_date_format_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Date", [], "any", false, false, false, 29), "Y-m-d"), "html", null, true))) : (print ("")));
-            echo "</td>
-                <td>";
+            echo "                ";
             // line 30
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Logo", [], "any", false, false, false, 30), "html", null, true);
-            echo "</td>
-                <td>";
+            echo "                ";
             // line 31
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Resume", [], "any", false, false, false, 31), "html", null, true);
-            echo "</td>
-                <td>";
-            // line 32
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["corporation"], "Abreviation", [], "any", false, false, false, 32), "html", null, true);
-            echo "</td>
-                <td>
+            echo "                ";
+            // line 33
+            echo "                <td>
                     <a href=\"";
             // line 34
             echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_corporations_show", ["id" => twig_get_attribute($this->env, $this->source, $context["corporation"], "id", [], "any", false, false, false, 34)]), "html", null, true);
@@ -195,7 +181,7 @@ class __TwigTemplate_375f859646a733ce88270218579a9dc7 extends Template
 
     public function getDebugInfo()
     {
-        return array (  175 => 46,  170 => 43,  161 => 39,  152 => 35,  148 => 34,  143 => 32,  139 => 31,  135 => 30,  131 => 29,  127 => 28,  123 => 27,  119 => 26,  115 => 25,  112 => 24,  107 => 23,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  161 => 46,  156 => 43,  147 => 39,  138 => 35,  134 => 34,  131 => 33,  129 => 31,  127 => 30,  125 => 29,  123 => 28,  119 => 26,  115 => 25,  112 => 24,  107 => 23,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -226,12 +212,12 @@ class __TwigTemplate_375f859646a733ce88270218579a9dc7 extends Template
             <tr>
                 <td>{{ corporation.id }}</td>
                 <td>{{ corporation.Nom }}</td>
-                <td>{{ corporation.Ville }}</td>
-                <td>{{ corporation.Pays }}</td>
-                <td>{{ corporation.Date ? corporation.Date|date('Y-m-d') : '' }}</td>
-                <td>{{ corporation.Logo }}</td>
-                <td>{{ corporation.Resume }}</td>
-                <td>{{ corporation.Abreviation }}</td>
+                {# <td>{{ corporation.Ville }}</td> #}
+                {# <td>{{ corporation.Pays }}</td> #}
+                {# <td>{{ corporation.Date ? corporation.Date|date('Y-m-d') : '' }}</td> #}
+                {# <td>{{ corporation.Logo }}</td> #}
+                {# <td>{{ corporation.Resume }}</td>
+                <td>{{ corporation.Abreviation }}</td> #}
                 <td>
                     <a href=\"{{ path('app_corporations_show', {'id': corporation.id}) }}\">show</a>
                     <a href=\"{{ path('app_corporations_edit', {'id': corporation.id}) }}\">edit</a>

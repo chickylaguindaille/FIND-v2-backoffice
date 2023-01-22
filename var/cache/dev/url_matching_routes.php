@@ -14,7 +14,6 @@ return [
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
         '/ville' => [[['_route' => 'app_ville_index', '_controller' => 'App\\Controller\\VilleController::index'], null, ['GET' => 0], null, true, false, null]],
-        '/ville/liste' => [[['_route' => 'ville', '_controller' => 'App\\Controller\\VilleController::villes'], null, ['GET' => 0], null, false, false, null]],
         '/ville/new' => [[['_route' => 'app_ville_new', '_controller' => 'App\\Controller\\VilleController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/_profiler' => [[['_route' => '_profiler_home', '_controller' => 'web_profiler.controller.profiler::homeAction'], null, null, null, true, false, null]],
         '/_profiler/search' => [[['_route' => '_profiler_search', '_controller' => 'web_profiler.controller.profiler::searchAction'], null, null, null, false, false, null]],

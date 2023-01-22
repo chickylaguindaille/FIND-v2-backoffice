@@ -2,7 +2,12 @@
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
 <script>
-
+    $( 'input:radio' ).click(function() {
+        $( ".table" ).addClass('d-none')
+        var selection=$(this).attr('id');
+        console.log(selection)
+        $('.'+selection ).removeClass('d-none')
+    });
 
 
 </script>

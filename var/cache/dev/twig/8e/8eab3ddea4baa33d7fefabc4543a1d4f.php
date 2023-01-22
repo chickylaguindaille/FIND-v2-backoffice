@@ -44,7 +44,12 @@ class __TwigTemplate_da0368c1d8e71a303530846e67052a29 extends Template
 <script src=\"https://code.jquery.com/jquery-3.5.0.js\"></script>
 
 <script>
-
+    \$( 'input:radio' ).click(function() {
+        \$( \".table\" ).addClass('d-none')
+        var selection=\$(this).attr('id');
+        console.log(selection)
+        \$('.'+selection ).removeClass('d-none')
+    });
 
 
 </script>";
@@ -72,7 +77,12 @@ class __TwigTemplate_da0368c1d8e71a303530846e67052a29 extends Template
 <script src=\"https://code.jquery.com/jquery-3.5.0.js\"></script>
 
 <script>
-
+    \$( 'input:radio' ).click(function() {
+        \$( \".table\" ).addClass('d-none')
+        var selection=\$(this).attr('id');
+        console.log(selection)
+        \$('.'+selection ).removeClass('d-none')
+    });
 
 
 </script>", "inc/all/all.js.twig", "/Applications/MAMP/htdocs/FIND-v2-backoffice/templates/inc/all/all.js.twig");

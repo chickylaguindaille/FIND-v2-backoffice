@@ -85,8 +85,13 @@ class __TwigTemplate_18b8653212b0a2da4a83726fd6c29fac extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Ville index</h1>
-
+        echo "    <div class=\"d-flex\">
+        <h1>Villes</h1>
+        <a href=\"";
+        // line 8
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ville_new");
+        echo "\" class=\"align-self-center px-3\">Create new</a>
+    </div>
     <table class=\"table\">
         <thead>
             <tr>
@@ -98,41 +103,41 @@ class __TwigTemplate_18b8653212b0a2da4a83726fd6c29fac extends Template
         </thead>
         <tbody>
         ";
-        // line 18
+        // line 20
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["villes"]) || array_key_exists("villes", $context) ? $context["villes"] : (function () { throw new RuntimeError('Variable "villes" does not exist.', 18, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["villes"]) || array_key_exists("villes", $context) ? $context["villes"] : (function () { throw new RuntimeError('Variable "villes" does not exist.', 20, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["ville"]) {
-            // line 19
+            // line 21
             echo "            <tr>
                 <td>";
-            // line 20
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "id", [], "any", false, false, false, 20), "html", null, true);
-            echo "</td>
-                <td>";
-            // line 21
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "nom", [], "any", false, false, false, 21), "html", null, true);
-            echo "</td>
-                <td>";
             // line 22
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "blason", [], "any", false, false, false, 22), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "id", [], "any", false, false, false, 22), "html", null, true);
             echo "</td>
                 <td>";
             // line 23
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "country", [], "any", false, false, false, 23), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "nom", [], "any", false, false, false, 23), "html", null, true);
             echo "</td>
                 <td>";
             // line 24
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "region", [], "any", false, false, false, 24), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "blason", [], "any", false, false, false, 24), "html", null, true);
+            echo "</td>
+                <td>";
+            // line 25
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "country", [], "any", false, false, false, 25), "html", null, true);
+            echo "</td>
+                <td>";
+            // line 26
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["ville"], "region", [], "any", false, false, false, 26), "html", null, true);
             echo "</td>
                 <td>
                     <a href=\"";
-            // line 26
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ville_show", ["id" => twig_get_attribute($this->env, $this->source, $context["ville"], "id", [], "any", false, false, false, 26)]), "html", null, true);
+            // line 28
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ville_show", ["id" => twig_get_attribute($this->env, $this->source, $context["ville"], "id", [], "any", false, false, false, 28)]), "html", null, true);
             echo "\">show</a>
                     <a href=\"";
-            // line 27
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ville_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["ville"], "id", [], "any", false, false, false, 27)]), "html", null, true);
+            // line 29
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ville_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["ville"], "id", [], "any", false, false, false, 29)]), "html", null, true);
             echo "\">edit</a>
                 </td>
             </tr>
@@ -140,7 +145,7 @@ class __TwigTemplate_18b8653212b0a2da4a83726fd6c29fac extends Template
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 31
+            // line 33
             echo "            <tr>
                 <td colspan=\"4\">no records found</td>
             </tr>
@@ -149,14 +154,10 @@ class __TwigTemplate_18b8653212b0a2da4a83726fd6c29fac extends Template
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['ville'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 35
+        // line 37
         echo "        </tbody>
     </table>
 
-    <a href=\"";
-        // line 38
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_ville_new");
-        echo "\">Create new</a>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -178,7 +179,7 @@ class __TwigTemplate_18b8653212b0a2da4a83726fd6c29fac extends Template
 
     public function getDebugInfo()
     {
-        return array (  158 => 38,  153 => 35,  144 => 31,  135 => 27,  131 => 26,  126 => 24,  122 => 23,  118 => 22,  114 => 21,  110 => 20,  107 => 19,  102 => 18,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  158 => 37,  149 => 33,  140 => 29,  136 => 28,  131 => 26,  127 => 25,  123 => 24,  119 => 23,  115 => 22,  112 => 21,  107 => 20,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -188,8 +189,10 @@ class __TwigTemplate_18b8653212b0a2da4a83726fd6c29fac extends Template
 {% block title %}Ville index{% endblock %}
 
 {% block body %}
-    <h1>Ville index</h1>
-
+    <div class=\"d-flex\">
+        <h1>Villes</h1>
+        <a href=\"{{ path('app_ville_new') }}\" class=\"align-self-center px-3\">Create new</a>
+    </div>
     <table class=\"table\">
         <thead>
             <tr>
@@ -220,7 +223,6 @@ class __TwigTemplate_18b8653212b0a2da4a83726fd6c29fac extends Template
         </tbody>
     </table>
 
-    <a href=\"{{ path('app_ville_new') }}\">Create new</a>
 {% endblock %}
 ", "ville/index.html.twig", "/Applications/MAMP/htdocs/FIND-v2-backoffice/templates/ville/index.html.twig");
     }

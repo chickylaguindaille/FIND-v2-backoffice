@@ -53,12 +53,12 @@ class Corporations
     }
 
 
-    public function getVille(): ?string
+    public function getVilleCorpo(): ?string
     {
         return $this->Ville;
     }
 
-    public function setVille(string $Ville): self
+    public function setVilleCorpo(string $Ville): self
     {
         $this->Ville = $Ville;
 

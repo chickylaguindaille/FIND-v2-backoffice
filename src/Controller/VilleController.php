@@ -21,15 +21,6 @@ class VilleController extends AbstractController
         ]);
     }
 
-
-    #[Route('/liste', name: 'ville', methods: ['GET'])]
-    public function villes(VilleRepository $villeRepository): Response
-    {
-        return $this->render('location/town.html.twig', [
-            'villes' => $villeRepository->findAll(),
-        ]);
-    }
-
     #[Route('/new', name: 'app_ville_new', methods: ['GET', 'POST'])]
     public function new(Request $request, VilleRepository $villeRepository): Response
     {

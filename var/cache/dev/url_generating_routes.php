@@ -12,7 +12,6 @@ return [
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
     'app_ville_index' => [[], ['_controller' => 'App\\Controller\\VilleController::index'], [], [['text', '/ville/']], [], [], []],
-    'ville' => [[], ['_controller' => 'App\\Controller\\VilleController::villes'], [], [['text', '/ville/liste']], [], [], []],
     'app_ville_new' => [[], ['_controller' => 'App\\Controller\\VilleController::new'], [], [['text', '/ville/new']], [], [], []],
     'app_ville_show' => [['id'], ['_controller' => 'App\\Controller\\VilleController::show'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/ville']], [], [], []],
     'app_ville_edit' => [['id'], ['_controller' => 'App\\Controller\\VilleController::edit'], [], [['text', '/edit'], ['variable', '/', '[^/]++', 'id', true], ['text', '/ville']], [], [], []],
